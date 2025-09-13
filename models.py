@@ -1,4 +1,3 @@
-# analysis.py
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -44,7 +43,6 @@ def compute_mi_matrix(df: pd.DataFrame, params: list[str], regime: str | None = 
     param_pairs = [(i, j, params[i], params[j]) for i in range(len(params)) for j in range(i, len(params))]
     failed_pairs = []
     
-    # Note: In Streamlit, we can't use rich.progress easily, so simplified
     for i, j, param1, param2 in param_pairs:
         try:
             score = compute_mi_score(param1, param2, df, config.random_seed)
