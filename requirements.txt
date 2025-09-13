@@ -1,0 +1,17 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scipy
+scikit-learn
+tensorflow
+deap
+rich
+joblib
+structlog
+pydantic
+openpyxl
+scikit-optimize
+shap
